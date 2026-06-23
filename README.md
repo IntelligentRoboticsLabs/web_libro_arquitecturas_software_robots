@@ -2,6 +2,8 @@
 
 Repositorio con el sitio web del libro universitario **Arquitecturas Software para Robots**.
 
+Sitio web: https://intelligentroboticslabs.github.io/web_libro_arquitecturas_software_robots/
+
 ## Autores
 
 - **Francisco Martín Rico** — Universidad Rey Juan Carlos (URJC)

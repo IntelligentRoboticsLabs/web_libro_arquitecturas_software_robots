@@ -337,6 +337,25 @@
     </div>
   </section>
 
+  <!-- ── CÓMO CITAR ── -->
+  <section>
+    <h2>Cómo citar</h2>
+    <p class="section-intro">Si utilizas este libro en tu investigación o docencia, puedes citarlo con la siguiente entrada BibTeX:</p>
+    <div class="bibtex-wrapper">
+      <button class="bibtex-copy" onclick="copyBibtex()" aria-label="Copiar BibTeX al portapapeles">Copiar</button>
+      <pre class="bibtex-block" id="bibtex-entry">@book{martinrico2026asr,
+  author    = {Mart{\'{i}}n Rico, Francisco and
+               P{\'{e}}rez Rodr{\'{i}}guez, Rodrigo},
+  title     = {Arquitecturas {S}oftware para {R}obots},
+  publisher = {Intelligent Robotics Lab},
+  year      = {2026},
+  note      = {v27.0.0},
+  url       = {https://intelligentroboticslab.gsyc.urjc.es/web_libro_arquitecturas_software_robots/},
+  license   = {CC BY-NC-ND 4.0}
+}</pre>
+    </div>
+  </section>
+
 </main>
 
 <!-- ── ENGLISH SECTION ── -->
@@ -366,5 +385,19 @@
   </div>
 </footer>
 
+<script>
+function copyBibtex() {
+  const text = document.getElementById('bibtex-entry').textContent;
+  navigator.clipboard.writeText(text).then(function() {
+    const btn = document.querySelector('.bibtex-copy');
+    btn.textContent = '\u2713 Copiado';
+    btn.classList.add('copied');
+    setTimeout(function() {
+      btn.textContent = 'Copiar';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+</script>
 </body>
 </html>

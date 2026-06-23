@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arquitecturas Software para Robots – Libro ASR</title>
+  <meta name="description" content="Libro universitario de Ingeniería de Robótica Software. Arquitecturas Software para Robots, de Francisco Martín Rico y Rodrigo Pérez Rodríguez." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b2d4a" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Arquitecturas Software para Robots",
+    "author": [
+      { "@type": "Person", "name": "Francisco Martín Rico" },
+      { "@type": "Person", "name": "Rodrigo Pérez Rodríguez" }
+    ],
+    "publisher": { "@type": "Organization", "name": "Intelligent Robotics Lab" },
+    "inLanguage": "es",
+    "description": "Libro universitario de Ingeniería de Robótica Software orientado al diseño, razonamiento y evaluación de arquitecturas software para robots reales con ROS 2."
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <img src="img/ir-logo.png" alt="Intelligent Robotics Lab" />
+    <div>
+      <div class="header-title">Arquitecturas Software para Robots</div>
+      <div class="header-subtitle">Libro ASR · Intelligent Robotics Lab · URJC</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ── HERO ── -->
+  <div class="hero">
+    <div class="book-cover-wrapper">
+      <a class="book-cover-link" href="pdf/asr_book.pdf" download="asr_book.pdf" title="Descargar el libro en PDF">
+        <img src="img/book_cover-001.png" alt="Portada del libro Arquitecturas Software para Robots" />
+      </a>
+      <p class="book-cover-hint">&#8595; Haz clic en la portada para descargar el PDF</p>
+    </div>
+
+    <div class="hero-info">
+      <h1>Arquitecturas Software para Robots</h1>
+      <p class="subtitle">Libro Universitario de Ingeniería de Robótica Software</p>
+
+      <dl class="book-meta">
+        <dt>Autores</dt>
+        <dd>Francisco Martín Rico &amp; Rodrigo Pérez Rodríguez</dd>
+        <dt>Versión</dt>
+        <dd>v27.0.0</dd>
+        <dt>Editorial</dt>
+        <dd>Intelligent Robotics Lab</dd>
+        <dt>Primera edición</dt>
+        <dd>Enero de 2026</dd>
+        <dt>Licencia</dt>
+        <dd><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a></dd>
+      </dl>
+
+      <p class="hero-desc">
+        La robótica es, por naturaleza, una disciplina integradora. Este libro nace con el objetivo
+        de formar ingenieras e ingenieros en robótica especializados en software, capaces no solo de
+        programar componentes aislados, sino de diseñar, razonar, evaluar y evolucionar
+        <strong>arquitecturas software para robots reales</strong>. El texto combina fundamentos
+        teóricos —componentes, comunicación, ejecución reactiva, máquinas de estados y Behavior
+        Trees— con una progresión práctica de seis prácticas de complejidad creciente, todo ello
+        apoyado en <strong>ROS&nbsp;2</strong> como infraestructura concreta de referencia.
+      </p>
+
+      <a class="button" href="pdf/asr_book.pdf" download="asr_book.pdf">
+        &#8595;&nbsp; Descargar el libro (PDF)
+      </a>
+    </div>
+  </div>
+
+  <!-- ── DESCRIPCIÓN ── -->
+  <section>
+    <h2>Sobre el libro</h2>
+    <p class="section-intro">
+      El libro está organizado en dos partes complementarias: una parte teórica de siete capítulos
+      y una parte práctica de seis prácticas de ingeniería progresiva.
+    </p>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap:1.25rem; margin-top:1rem;">
+
+      <div class="card" style="padding:1.25rem;">
+        <h3 style="margin:0 0 0.5rem 0; color:var(--secondary);">Parte I — Fundamentos teóricos</h3>
+        <ul style="margin:0; padding-left:1.25rem; color:#4b5563; font-size:0.97rem; line-height:1.7;">
+          <li>Cap. 1 — Arquitectura software en robótica</li>
+          <li>Cap. 2 — Ejecución y comunicación básica</li>
+          <li>Cap. 3 — Percepción robótica y representación espacial</li>
+          <li>Cap. 4 — Arquitecturas deliberativas e híbridas</li>
+          <li>Cap. 5 — Máquinas de estados finitos (FSM)</li>
+          <li>Cap. 6 — Behavior Trees</li>
+          <li>Cap. 7 — Arquitecturas de referencia y Deep ROS&nbsp;2</li>
+        </ul>
+      </div>
+
+      <div class="card" style="padding:1.25rem;">
+        <h3 style="margin:0 0 0.5rem 0; color:var(--secondary);">Parte II — Prácticas</h3>
+        <ul style="margin:0; padding-left:1.25rem; color:#4b5563; font-size:0.97rem; line-height:1.7;">
+          <li>Práctica 1 — Entorno de desarrollo y primer sistema ROS&nbsp;2</li>
+          <li>Práctica 2 — Teleoperación reactiva con bumper (Kobuki)</li>
+          <li>Práctica 3 — Seguimiento 2D/3D y evitación con láser</li>
+          <li>Práctica 4 — Navegación con Nav2 y patrullaje mediante FSM</li>
+          <li>Práctica 5 — Robot Camarero con Behavior Trees</li>
+          <li>Práctica 6 — Proyecto abierto: arquitectura Misión-Tarea-Capacidad</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── SLIDES ── -->
+  <section>
+    <h2>Diapositivas</h2>
+    <p class="section-intro">
+      Materiales de clase en formato de diapositivas para cada capítulo y práctica del libro.
+      Haz clic en cualquier diapositiva para descargar el PDF correspondiente.
+    </p>
+
+    <p style="font-weight:700; color:var(--primary); margin:0 0 0.75rem 0; font-size:1rem;">Capítulos</p>
+    <div class="slides-grid">
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_ch1.pdf" download="slides_ch1.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_ch1-01.png" alt="Portada diapositivas Capítulo 1" />
+          <div class="slide-info">
+            <span class="slide-label">Capítulo 1</span>
+            <p class="slide-title">Arquitectura software en robótica</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_ch2.pdf" download="slides_ch2.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_ch2-01.png" alt="Portada diapositivas Capítulo 2" />
+          <div class="slide-info">
+            <span class="slide-label">Capítulo 2</span>
+            <p class="slide-title">Ejecución y comunicación básica</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_ch3.pdf" download="slides_ch3.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_ch3-01.png" alt="Portada diapositivas Capítulo 3" />
+          <div class="slide-info">
+            <span class="slide-label">Capítulo 3</span>
+            <p class="slide-title">Percepción robótica y representación espacial</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_ch4.pdf" download="slides_ch4.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_ch4-01.png" alt="Portada diapositivas Capítulo 4" />
+          <div class="slide-info">
+            <span class="slide-label">Capítulo 4</span>
+            <p class="slide-title">Arquitecturas deliberativas e híbridas</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_ch5.pdf" download="slides_ch5.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_ch5-01.png" alt="Portada diapositivas Capítulo 5" />
+          <div class="slide-info">
+            <span class="slide-label">Capítulo 5</span>
+            <p class="slide-title">Máquinas de estados finitos</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_ch6.pdf" download="slides_ch6.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_ch6-01.png" alt="Portada diapositivas Capítulo 6" />
+          <div class="slide-info">
+            <span class="slide-label">Capítulo 6</span>
+            <p class="slide-title">Behavior Trees</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_ch7.pdf" download="slides_ch7.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_ch7-01.png" alt="Portada diapositivas Capítulo 7" />
+          <div class="slide-info">
+            <span class="slide-label">Capítulo 7</span>
+            <p class="slide-title">Arquitecturas de referencia y Deep ROS&nbsp;2</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <p style="font-weight:700; color:var(--primary); margin:2rem 0 0.75rem 0; font-size:1rem;">Prácticas</p>
+    <div class="slides-grid">
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_pr1.pdf" download="slides_pr1.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_pr1-01.png" alt="Portada diapositivas Práctica 1" />
+          <div class="slide-info">
+            <span class="slide-label">Práctica 1</span>
+            <p class="slide-title">Entorno de desarrollo y primer sistema ROS&nbsp;2</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_pr2.pdf" download="slides_pr2.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_pr2-01.png" alt="Portada diapositivas Práctica 2" />
+          <div class="slide-info">
+            <span class="slide-label">Práctica 2</span>
+            <p class="slide-title">Teleoperación reactiva con bumper (Kobuki)</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_pr3.pdf" download="slides_pr3.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_pr3-01.png" alt="Portada diapositivas Práctica 3" />
+          <div class="slide-info">
+            <span class="slide-label">Práctica 3</span>
+            <p class="slide-title">Seguimiento de objeto/persona con detecciones 2D/3D y evitación con láser</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_pr4.pdf" download="slides_pr4.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_pr4-01.png" alt="Portada diapositivas Práctica 4" />
+          <div class="slide-info">
+            <span class="slide-label">Práctica 4</span>
+            <p class="slide-title">Navegación con Nav2 y patrullaje mediante FSM</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_pr5.pdf" download="slides_pr5.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_pr5-01.png" alt="Portada diapositivas Práctica 5" />
+          <div class="slide-info">
+            <span class="slide-label">Práctica 5</span>
+            <p class="slide-title">Robot Camarero con Behavior Trees</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="slide-card">
+        <a href="pdf/slides/slides_pr6.pdf" download="slides_pr6.pdf">
+          <img class="slide-thumbnail" src="img/slides/slides_pr6-01.png" alt="Portada diapositivas Práctica 6" />
+          <div class="slide-info">
+            <span class="slide-label">Práctica 6</span>
+            <p class="slide-title">Proyecto abierto: arquitectura Misión-Tarea-Capacidad con FSM y Behavior Trees</p>
+            <span class="slide-dl">&#8595; Descargar PDF</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ── ENGLISH SECTION ── -->
+<div class="section-english">
+  <h2>English version</h2>
+  <p>
+    An English edition of this book is currently in preparation and the rights are held by
+    <strong style="color:#ffffff;">Taylor &amp; Francis</strong>, one of the world's leading academic
+    publishers. We will provide a link to the publisher's page to access the English version as soon
+    as it becomes available.
+  </p>
+  <p>
+    Stay tuned — we will update this page with the link to the English edition shortly.
+  </p>
+  <span class="publisher-badge">
+    Coming soon &nbsp;·&nbsp; Taylor &amp; Francis
+  </span>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>
+      &copy; 2026 Francisco Martín Rico &amp; Rodrigo Pérez Rodríguez &mdash;
+      Distribuido bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>.
+    </p>
+    <p>Intelligent Robotics Lab &mdash; Universidad Rey Juan Carlos (URJC)</p>
+  </div>
+</footer>
+
+</body>
+</html>

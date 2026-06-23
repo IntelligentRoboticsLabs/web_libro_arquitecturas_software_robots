@@ -1,0 +1,349 @@
+:root {
+  --primary: #0b2d4a;
+  --secondary: #b00020;
+  --bg: #f6f8fb;
+  --text: #111827;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+  --radius: 14px;
+  --maxw: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+               "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  background: var(--secondary);
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow);
+}
+
+.button:hover {
+  text-decoration: none;
+  filter: brightness(0.95);
+}
+
+.button:focus-visible {
+  outline: 3px solid rgba(176, 0, 32, 0.35);
+  outline-offset: 3px;
+}
+
+/* ── HEADER ── */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.header-inner img {
+  max-height: 64px;
+  width: auto;
+  display: block;
+}
+
+.header-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.header-subtitle {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+/* ── HERO ── */
+main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.book-cover-wrapper {
+  flex-shrink: 0;
+}
+
+.book-cover-link {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(17, 24, 39, 0.18);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  width: 220px;
+}
+
+.book-cover-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(17, 24, 39, 0.26);
+  text-decoration: none;
+}
+
+.book-cover-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.book-cover-hint {
+  text-align: center;
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.hero-info h1 {
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  line-height: 1.15;
+  margin: 0 0 0.35rem 0;
+  color: var(--primary);
+  letter-spacing: -0.02em;
+}
+
+.hero-info .subtitle {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin: 0 0 1.25rem 0;
+  font-style: italic;
+}
+
+.book-meta {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.25rem;
+  display: inline-grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.85rem;
+  row-gap: 0.3rem;
+}
+
+.book-meta dt {
+  font-weight: 700;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.book-meta dd {
+  margin: 0;
+  color: #374151;
+}
+
+.hero-desc {
+  color: #374151;
+  font-size: 1rem;
+  max-width: 72ch;
+  margin: 0 0 1.5rem 0;
+}
+
+/* ── SECTIONS ── */
+section {
+  padding: 2.2rem 1.5rem;
+}
+
+section + section {
+  border-top: 1px solid var(--border);
+}
+
+section h2 {
+  font-size: 1.65rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--primary);
+  letter-spacing: -0.01em;
+}
+
+section .section-intro {
+  margin: 0 0 1.5rem 0;
+  color: var(--muted);
+  max-width: 80ch;
+}
+
+/* ── SLIDES GRID ── */
+.slides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  gap: 1.25rem;
+}
+
+.slide-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(17, 24, 39, 0.13);
+}
+
+.slide-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.slide-card a:hover { text-decoration: none; }
+
+.slide-thumbnail {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  background: #e5e7eb;
+}
+
+.slide-info {
+  padding: 0.65rem 0.85rem 0.85rem 0.85rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.slide-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.slide-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.slide-dl {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* ── ENGLISH SECTION ── */
+.section-english {
+  background: var(--primary);
+  color: #e8eef4;
+  border-radius: var(--radius);
+  padding: 2rem 2rem;
+  margin: 0 1.5rem 2.5rem 1.5rem;
+}
+
+.section-english h2 {
+  color: #ffffff;
+  margin: 0 0 0.6rem 0;
+}
+
+.section-english p {
+  color: #c9d8e6;
+  max-width: 72ch;
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+}
+
+.section-english .publisher-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 1.1rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  margin-top: 0;
+}
+
+.footer-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.footer-inner p { margin: 0.35rem 0; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .book-cover-link {
+    width: 160px;
+    margin: 0 auto;
+  }
+  .book-cover-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-english {
+    margin: 0 0.75rem 2rem 0.75rem;
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-inner { flex-wrap: wrap; }
+}
